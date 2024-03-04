@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-
 main(){
-	if [ $# -gt 0 ] && [ "$1" -eq 0 ]
-	then
-		echo  "Welcome to the Enigma!"
-	fi
 	printMenu
 	read -r input
 	case $input in
@@ -117,6 +112,6 @@ option4(){
 	main
 }
 
-
-main 0
+echo  "Welcome to the Enigma!"
+main 
 
